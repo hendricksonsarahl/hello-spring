@@ -11,10 +11,9 @@ public class HelloController {
 
     @RequestMapping(value = "")
     @ResponseBody
-    public String index(HttpServletRequest request) {
-
-        String username = request.getParameter("name")
-        return "Hello" + username;
+    public String index(HttpServletRequest request){
+        String name = request.getParameter("name");
+        return "Hello " + name;
     }
 
     @RequestMapping(value = "goodbye")
