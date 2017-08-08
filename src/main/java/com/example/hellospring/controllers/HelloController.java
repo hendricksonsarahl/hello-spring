@@ -47,9 +47,8 @@ public class HelloController {
     }
 
     @RequestMapping(value = "goodbye")
-    @ResponseBody
     public String goodbye() {
-        return "Goodbye!";
+        return "redirect:/";
     }
 
 }
